@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="font-size: 24px; color: red;">Prediction Result</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body style="font-family: Arial, sans-serif;
+background-color: whitesmoke;
+color: black;
+ text-align: center;
+     background-image: url('static/img/reading-textbooks-rustic-wooden-table-generated-by-ai.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+       ">
+
+    <div style="background-color: #f5f5dc5e;
+
+     border: 0.5px solid black;
+      padding: 20px;
+      text-align: center;
+      margin-top: 100px;
+
+">
+
+        <h1 style="color: black;">Arabic Text Classification</h1>
+        <h2 style="color: black;">Input Sentence:</h2>
+        <p style="color: rgb(43 7 10 );font-style: italic;
+     font-weight: bold;
+font-size:25px">{{ sentence }}</p>
+        <h2 style="color: black;">Predicted Label:</h2>
+        <p dir="rtl" lang="ar" style="color: rgb(43 7 10 );  font-style: italic;
+     font-weight: bold;font-size:25px">  "{{ predicted_label[0] }}" </p>
+
+
+        <a href="/model9" style="color: #fff; font-weight: bold;font-size:20px">Classify another Poem</a>
+    </div>
+</body>
+</html>

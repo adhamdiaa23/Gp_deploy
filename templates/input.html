@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap .min.css">
+  <link rel="stylesheet" href="../static/css/animate.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author &amp; rhyme</title>
+
+    <style>
+        .author {
+    background-image:url('static/img/author.jpeg');
+     background-repeat: no-repeat;
+    background-size: cover;
+    height:93.4vh;
+}
+    </style>
+</head>
+
+<body>
+    <!-- start navbar  -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 Navbar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <a class="navbar-brand pl-5" href="#">
+            <img src="static/img/logo,.png" class="logoo">
+              <span>oetify</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/model1">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Audio Denoise</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="/modelSpeech" >
+                  Speaker Identification
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/model2">generation & classification</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- end navbar  -->
+    <div class="author mt-5">
+        <div class="text">
+            <h1 class="text-center p-5">Author &amp; rhyme</h1>
+
+            <div class="content">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mt-5">"Enter Poet's Name and Rhyme then <br> you get the poem based on these inputs"</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="/generate_poetry" method="POST">
+                                <div class="mb-2">
+                                    <label for="poet_name">Poet's Name:</label>
+                                    <input type="text" id="poet_name" name="poet_name" class="form-control" placeholder="Enter poet's name" required list="poet_name_options">
+                                    <datalist id="poet_name_options">
+                                        <option>آمنة بنت عتيبة</option>
+<option>امنة بنت وهب</option>
+<option>أبان الالحقي</option>
+<option>أبد الصغير العلوي</option>
+<option>أبن أبي اليسر</option>
+<option>أبن أرفع رأس</option>
+<option>أبو أجأ التغلبي</option>
+<option>أبو أذينه</option>
+<option>أبو الأخيل العجلي</option>
+<option>أبو الأسود الدؤلي</option>
+<option>أبو البحر الخطي</option>
+<option>أبو البقاء الرندي</option>
+<option>أبو الحسن بن حريق</option>
+<option>أبو الحسن بن خروف</option>
+<option>أبو الحسين الجزار</option>
+<option>أبو الحكيم المري</option>
+<option>أبو الذيال اليهودي</option>
+<option>أبو الشمقمق</option>
+<option>أبو العباس الجراوي</option>
+<option>أبو العلاء المعري</option>
+<option>أبو العيناء</option>
+<option>أبو الفتح البستي</option>
+<option>أبو الفضل الكناني</option>
+<option>أبو الفضل الوليد</option>
+<option>أبو الفيض الكتاني</option>
+<option>أبو القاسم الشابي</option>
+<option>أبو القرين الفزاري</option>
+<option>أبو اللحام التغلبي</option>
+      <option>أبو المثلم الهذلي</option>
+<option>أبو المحاسن الشواء</option>
+<option>أبو الهدى الصيادي</option>
+<option>أبو اليمن الكندي</option>
+<option>أبو بثينه الهذلي</option>
+<option>أبو بكر الخوارزمي</option>
+<option>أبو بكر الصديق</option>
+<option>أبو بكر بن مجبر</option>
+<option>أبو بكر بن مغاور</option>
+<option>أبو تمام</option>
+<option>أبو جعفر الملاحي</option>
+<option>أبو حريز الشريف</option>
+<option>أبو حسان الفزاري</option>
+<option>أبو حمضة اليهودي</option>
+<option>أبو حنش التغلبي</option>
+<option>أبو حية الفزاري</option>
+<option>أبو ذؤيب الهذلي</option>
+<option>أبو زيد الأرحبي</option>
+<option>أبو سلمى ربيعة المزني</option>
+<option>أبو طالب</option>
+<option>أبو عدي النمري</option>
+<option>أبو عفك</option>
+<option>أبو فراس الحمداني</option>
+<option>أبو قردودة الطائي</option>
+<option>أبو قلابة الهذلي</option>
+<option>أبو قيس بن رفاعة</option>
+<option>أبو مدين التلمساني</option>
+<option>أبو نويرة التغلبي</option>
+<option>أحلام مستغانمي</option>
+<option>أحمد الكيواني</option>
+<option>أحمد شوقي</option>
+<option>أحمد محرم</option>
+<option>أحيحة بن الجلاح</option>
+<option>أرتبد الذبياني</option>
+<option>أرتبد بن ضابئ</option>
+<option>أرطأة الفزاري</option>
+<option>أروى بنت الحباب</option>
+<option>أزبر بن غزي</option>
+<option>أسامة بن منقذ</option>
+<option>أسامه محمد زامل</option>
+<option>أسماء التغلبية</option>
+<option>أسماء المرية</option>
+<option>أعشى باهلة</option>
+<option>أعصر بن سعد</option>
+<option>أفنون</option>
+<option>أم أبي جدابة</option>
+<option>أم الأغر بنت ربيعة التغلبية</option>
+<option>أم الضحاك المحاربية</option>
+<option>أم النحيف</option>
+<option>أم موسى الكلابية</option>
+<option>أمل دنقل</option>
+<option>أمية بن أبي الصلت</option>
+<option>أميمة بنت أمية</option>
+<option>أميمة بنت عبد المطلب</option>
+<option>أوس العبدي</option>
+<option>أوس الهجيمي</option>
+<option>أوس بن حارثة</option>
+<option>أوس بن حجر</option>
+<option>إبراهيم الأسطى</option>
+<option>إبراهيم الصولي</option>
+<option>إبراهيم طوقان</option>
+<option>إبراهيم عبد القادر المازني</option>
+<option>إدريس جمّاع</option>
+<option>إسماعيل صبري</option>
+<option>إلياس أبو شبكة</option>
+<option>إيليا ابو ماضي</option>
+<option>ابراهيم ناجي</option>
+<option>ابن أبي حفص</option>
+<option>ابن أبي عيسى</option>
+<option>ابن أم حزنة</option>
+<option>ابن إدريس التجيبي</option>
+<option>ابن الأبار البلنسي</option>
+<option>ابن الأثير المحدث</option>
+<option>ابن الأردخل</option>
+<option>ابن الأطنابة</option>
+<option>ابن البراق</option>
+<option>ابن البرون الصقلي</option>
+<option>ابن الجزري</option>
+<option>ابن الحاجب النحوي</option>
+<option>ابن الخيمي</option>
+<option>ابن الدهان</option>
+<option>ابن الرعلاء</option>
+<option>ابن الرومي</option>
+<option>ابن الزقاق</option>
+<option>ابن الساعاتي</option>
+<option>ابن العجلان النهدي</option>
+<option>ابن الفارض</option>
+<option>ابن الفراش</option>
+<option>ابن المتفننة</option>
+<option>ابن المستوفي الإربلي</option>
+<option>ابن المضلَّل</option>
+<option>ابن المعتز</option>
+<option>ابن المقرب العيوني</option>
+<option>ابن النطروني</option>
+<option>ابن النقيب</option>
+<option>ابن الوردي</option>
+<option>ابن الياسمين</option>
+<option>ابن بشري الصقلي</option>
+<option>ابن بشير الإحسائي</option>
+<option>ابن تيمية</option>
+<option>ابن ثور العامري</option>
+<option>ابن جبير الشاطبي</option>
+<option>ابن جرج الذهبي</option>
+<option>ابن جوين الطائي</option>
+<option>ابن جيا</option>
+<option>ابن حجاج</option>
+<option>ابن حربون</option>
+<option>ابن حزمون</option>
+<option>ابن حمديس</option>
+<option>ابن حموية</option>
+<option>ابن حيوس</option>
+<option>ابن خفاجه</option>
+<option>ابن دراج القسطلي</option>
+<option>ابن دنينير</option>
+<option>ابن دهن الحصي</option>
+<option>ابن رازكه</option>
+<option>ابن راشد الحمامي</option>
+<option>ابن رشيق القيرواني</option>
+<option>ابن رواحة الحموي</option>
+<option>ابن زاكور</option>
+<option>ابن زرعة الباهلي</option>
+<option>ابن زريق البغدادي</option>
+<option>ابن زمرك</option>
+<option>ابن زهر الحفيد</option>
+<option>ابن زيدون</option>
+<option>ابن سالم الهمداني</option>
+<option>ابن سعد البلنسي</option>
+<option>ابن سناء الملك</option>
+<option>ابن شعواء الفزالي</option>
+<option>ابن شكيل</option>
+<option>ابن شهاب العلوي</option>
+<option>ابن شيخان السالمي</option>
+<option>ابن صابر المنجنيقي</option>
+<option>ابن طاهر</option>
+<option>ابن طفيل</option>
+<option>ابن عبد ربه</option>
+<option>ابن عطاء الله المصري</option>
+<option>ابن علوي الحداد</option>
+<option>ابن عليق الطائي</option>
+<option>ابن عمرو الأغماتي</option>
+<option>ابن عمرو الكندي</option>
+<option>ابن عنين</option>
+<option>ابن عياش التجيبي</option>
+<option>ابن فكهة</option>
+<option>ابن قلاقس</option>
+<option>ابن كسرىابن كلاب العقيلي</option>
+<option>ابن لبال الشريشي</option>
+<option>ابن مالك الحميري</option>
+<option>ابن مجاور</option>
+<option>ابن مسعود الخشني</option>
+<option>ابن مسعود القرطبي</option>
+<option>ابن مطروح البلنسي</option>
+<option>ابن معتوق</option>
+<option>ابن معصوم</option>
+<option>ابن مليك الحموي</option>
+<option>ابن منجا الدمشقي</option>
+<option>ابن مواهب</option>
+<option>ابن نباته المصري</option>
+<option>ابن نجيب الهاشمي</option>
+<option>ابن نفادة</option>
+<option>ابن نوفل الحلبي</option>
+<option>ابو العتاهية</option>
+<option>ابو دُاود الإيادي</option>
+<option>ابو محمد الفقعسي</option>
+<option>ابو نواس</option>
+<option>احمد مطر</option>
+<option>الأبيوردي</option>
+<option>الأحبش التميمي</option>
+<option>الأحمر بن جندل</option>
+<option>الأحنف العكبري</option>
+<option>الأحوص الأنصاري</option>
+<option>الأخضر الفزاري</option>
+<option>الأخطل</option>
+<option>الأخنس التغلبي</option>
+<option>الأدير الكلبي</option>
+<option>الأسعر الجعفي</option>
+<option>الأسفع الأرحبي</option>
+<option>الأسلوم اليامي</option>
+<option>الأسود التغلبي</option>
+<option>الأسود النهشلي</option>
+<option>الأشتر الحمامي</option>
+<option>الأشعث الجاشي</option>
+<option>الأشعث بن عابس</option>
+<option>الأصمعي</option>
+<option>الأضبط السعدي</option>
+<option>الأعرج المري</option>
+<option>الأعسر الضبي</option>
+<option>الأعشى</option>
+<option>الأعور بن عمرو الازدي</option>
+<option>الأفوة الأودي</option>
+<option>الأمير الصنعاني</option>
+<option>الامير منجك باشا</option>
+<option>الباخرزي</option>
+<option>الباعونية</option>
+<option>البحتري</option>
+<option>البراق</option>
+<option>البرعي</option>
+<option>البسوس بنت منقذ التميمية</option>
+<option>البوصيري</option>
+<option>البُرجُمي</option>
+<option>التهامي</option>
+<option>الجاحظ</option>
+<option>الجحاف الفزاري</option>
+<option>الجميح الأسدي</option>
+<option>الجندل الفزاري</option>
+<option>الجوزاء بنت عروة البصرية</option>
+<option>الجيداء بنت زاهر الزبيدية</option>
+<option>الحارث الجرمي</option>
+<option>الحارث الحضرمي</option>
+<option>الحارث المذحجي</option>
+<option>الحارث بن الحصين</option>
+<option>الحارث بن حلزة</option>
+<option>الحارث بن زهير</option>
+<option>الحارث بن صريم الوادعي</option>
+<option>الحارث بن عباد</option>
+<option>الحارث بن عمرو الفزاري</option>
+<option>الحارث بن مر</option>
+<option>الحسل الهمداني</option>
+<option>الحسين بن علي</option>
+<option>الحشاش الأصغر</option>
+<option>الحصين بن حمام الفزاري</option>
+<option>الحطيئة</option>
+<option>الحكم الفزاري</option>
+<option>الحيص بيص</option>
+<option>الخبز أرزي</option>
+<option>الخرنق بنت بدر</option>
+<option>الخنساء بنت التيجان</option>
+<option>الخنساء بنت زهير</option>
+<option>الخنساء</option>
+<option>الدحداحة الفقيمية</option>
+<option>الدعجاء بنت وهب</option>
+<option>الدهنا بنت مسحل</option>
+<option>الراشاء بن نهار</option>
+<option>الراضي بالله</option>
+<option>الراعي المري</option>
+<option>الراعي النميري</option>
+<option>الراعي الهمداني</option>
+<option>الربيع بن أبي الحقيق</option>
+<option>الربيع بن زياد العبسي</option>
+<option>الربيع بن زياد الكلبي</option>
+<option>الربيع بن عقيل</option>
+<option>الزفيان</option>
+<option>السراج الوراق</option>
+<option>السري الرفاء</option>
+<option>السفاح التغلبي</option>
+<option>السلكة أم السليك</option>
+<option>السليك بن السلكة</option>
+<option>السمهري العلكي</option>
+<option>السموأل</option>
+<option>الشاب الظريف</option>
+<option>الشاذلي خزنه دار</option>
+<option>الشريف الرضي</option>
+<option>الشماخ الذبياني</option>
+<option>الصاحب بن عباد</option>
+<option>الصرصري</option>
+<option>الطرماح</option>
+<option>الطغرائي</option>
+<option>الطفيل الغنوي</option>
+<option>العباس بن الأحنف</option>
+<option>العباس بن مرداس</option>
+<option>العجاج</option>
+<option>العجلان بن خليد</option>
+<option>العرجي</option>
+<option>العقار بن سليل</option>
+<option>العنبر الخضم</option>
+<option>العوراء الذبيانية</option>
+<option>العوراء اليربوعية</option>
+<option>الغطمش الضبي</option>
+<option>الفارعة بنت معاوية</option>
+<option>الفرزدق</option>
+<option>الفند الزماني</option>
+<option>القاضي الفاضل</option>
+<option>القعقاع بن شبث اليهودي</option>
+<option>القعقاع بن عمرو</option>
+<option>الكذاب الطابخي</option>
+<option>الكذاب الكلبي</option>
+<option>الكلحبة العرني</option>
+<option>الكميت بن زيد</option>
+<option>اللواح</option>
+<option>المتلمس الضبعي</option>
+<option>المسجاح الضبي</option>
+<option>المسيب بن علس</option>
+<option>المشؤوم</option>
+<option>المعان بن روق</option>
+<option>المعتمد بن عباد</option>
+<option>المفضل النكري</option>
+<option>المقنع الكندي</option>
+<option>المكزون السنجاري</option>
+<option>المنخل اليشكري</option>
+<option>المنفلوطي</option>
+<option>الميكالي</option>
+<option>النابغة التغلبي</option>
+<option>النابغة الجعدي</option>
+<option>النابغة الحارثي</option>
+<option>النابغة الذبياني</option>
+<option>النابغة الغنوي</option>
+<option>النوار الجل</option>
+<option>الهبل بن عامر</option>
+<option>الهبل</option>
+<option>الهجرس التغلبي</option>
+<option>الهذلول بن امرئ القيس</option>
+<option>الهذيل الأكبر التغلبي</option>
+<option>الهذيل بن أم عفاش</option>
+<option>الهيبان الفهمي</option>
+<option>الهيفاء بنت صبيح القضاعية</option>
+<option>الوقي الهمداني</option>
+<option>امرؤ القيس الزهيري</option>
+<option>امرؤ القيس السكوني</option>
+<option>امرؤ القيس الكلبي</option>
+<option>امرؤ القيس</option>
+<option>بداء بن سليمان</option>
+<option>بدر الفزاري</option>
+<option>بدر شاكر السياب</option>
+<option>بديع الزمان الهمذاني</option>
+<option>بديع القشاعلة</option>
+<option>برة بنت عبد المطلب</option>
+<option>بسام بن شريح</option>
+<option>بشار بن برد</option>
+<option>بشامة بن الغدير</option>
+<option>بلبل الغرام الحاجري</option>
+<option>بلعاء بن قيس الكناني</option>
+<option>بهاء الدين الصيادي</option>
+<option>بهاء الدين زهير</option>
+<option>بيهس الغطفاني</option>
+<option>بيهس الفزاري</option>
+<option>تأبط شراً</option>
+<option>تماضر بنت الشريد</option>
+<option>تميم البرغوثي</option>
+<option>تميم الفاطمي</option>
+<option>تنها بنت قرط العبدية</option>
+<option>توفيق زياد</option>
+<option>ثعلبة المازني</option>
+<option>ثعلبة بن بكر الأزدي</option>
+<option>ثعلبة بن عامر</option>
+<option>جابر المرني</option>
+<option>جابر المري</option>
+<option>جبار الفزاري</option>
+<option>جبار بن قرط</option>
+<option>جبر المعاوي</option>
+<option>جبران خليل جبران</option>
+<option>جبلة بن الحارث</option>
+<option>جبيهاء الأشجعي</option>
+<option>جحدر الوائلي</option>
+<option>جحيش الهمداني</option>
+<option>جرير</option>
+<option>جساس بن مرة</option>
+<option>جلواح</option>
+<option>جميل بثينة</option>
+<option>جميل صدقي الزهاوي</option>
+<option>جورج جرداق</option>
+<option>جورج جريس فرح</option>
+<option>حاتم الطائي</option>
+<option>حافظ ابراهيم</option>
+<option>حبيب الهلالي</option>
+<option>حسان بن ثابت</option>
+<option>حفني ناصف</option>
+<option>حماد بن سعيد</option>
+<option>حمزة الملك طمبل</option>
+<option>خالد الفرج</option>
+<option>خفاف بن ندبة السلمي</option>
+<option>خلفان بن مصبح</option>
+<option>خليل مردم بك</option>
+<option>خليل مطران</option>
+<option>دريد بن الصمة</option>
+<option>دعبل الخزاعي</option>
+<option>دويد القضاعي</option>
+<option>ذو الرمة</option>
+<option>رفعت الصليبي</option>
+<option>زكي مبارك</option>
+<option>زهير بن أبي سلمى</option>
+<option>زياد التميمي</option>
+<option>زياد السعودي</option>
+<option>سالم أبو جمهور القبيسي</option>
+<option>سالم بن عبدالله الكراني</option>
+<option>سامي المالكي</option>
+<option>سبط ابن التعاويذي</option>
+<option>سعيد بن أحمد البوسعيدي</option>
+<option>سلم الخاسر</option>
+<option>سليم عبدالقادر</option>
+<option>سليمان الباروني</option>
+<option>سليمان بن سحمان</option>
+<option>سهام آل براهمي</option>
+<option>سيد قطب</option>
+<option>سيف الرحبي</option>
+<option>شاعر الحمراء</option>
+<option>شريف بقنه</option>
+<option>شمر الحنفي</option>
+<option>صالح الشرنوبي</option>
+<option>صالح الفهدي</option>
+<option>صخر الغي</option>
+<option>صفي الدين الحلي</option>
+<option>صلاح عبد الصبور</option>
+<option>طرفة بن العبد</option>
+<option>ظافر الحداد</option>
+<option>عارف الخاجة</option>
+<option>عبد الرحمن بن مساعد</option>
+<option>عبد الرزاق عبد الواحد</option>
+<option>عبد الغفار الأخرس</option>
+<option>عبد الغني النابلسي</option>
+<option>عبد القادر الجزائري</option>
+<option>عبد المجيد الأزدي</option>
+<option>عبد الولي الشميرى</option>
+<option>عبده صالح</option>
+<option>عبيد بن الأبرص</option>
+<option>عدي بن الرقاع</option>
+<option>عدي بن ربيعة</option>
+<option>عروة بن أذينة</option>
+<option>عروة بن الورد</option>
+<option>عروة بن حزام</option>
+<option>علقمة الفحل</option>
+<option>علي بن أبي طالب</option>
+<option>علي بن سعود آل ثاني</option>
+<option>علي بن محمد الشحي</option>
+<option>عمارة اليمني</option>
+<option>عمر الأنسي</option>
+<option>عمر اليافي</option>
+<option>عمر بن أبي ربيعة</option>
+<option>عمرو الباهلي</option>
+<option>عمرو بن كلثوم</option>
+<option>عمرو بن معد يكرب</option>
+<option>عنترة بن شداد</option>
+<option>غازي الجمل</option>
+<option>غازي القصيبي</option>
+<option>فؤاد الخطيب</option>
+<option>فاروق جويدة</option>
+<option>فاطمة الزهراء</option>
+<option>فتيان الشاغوري</option>
+<option>فهد العسكر</option>
+<option>قاسم حداد</option>
+<option>قيس بن الملوح</option>
+<option>قيس بن ذريح</option>
+<option>كثير عزة</option>
+<option>كريم معتوق</option>
+<option>كعب بن زهير</option>
+<option>لبيد بن ربيعة</option>
+<option>لسان الدين بن الخطيب</option>
+<option>ماء العينين</option>
+<option>مالك الأشتر</option>
+<option>مانع سعيد العتيبة</option>
+<option>مبارك بن حمد العقيلي</option>
+<option>محمد الشوكاني</option>
+<option>محمد المعولي</option>
+<option>محمد بن حمود الشحي</option>
+<option>محمد بن صالح المنتفقي</option>
+<option>محمد بن عبود العمودي</option>
+<option>محمد رسول الله</option>
+<option>محمد عبد الباري</option>
+<option>محمد فضولي</option>
+<option>محمود درويش</option>
+<option>محمود سامى البارودى</option>
+<option>مدثر بن إبراهيم بن الحجاز</option>
+<option>مسكين الدرامي</option>
+<option>مصطفى التل</option>
+<option>مصطفى بن زكري</option>
+<option>مصطفى صادق الرافعي</option>
+<option>مطلق عبد الخالق</option>
+<option>معروف الرصافي</option>
+<option>مَحمد اسموني</option>
+<option>نازك الملائكة</option>
+<option>ناصيف اليازجي</option>
+<option>نزار قباني</option>
+<option>نصيب بن رباح</option>
+<option>هدى السعدي</option>
+<option>هشام الجخ</option>
+<option>هلال بن سعيد العماني</option>
+<option>وضاح اليمن</option>
+<option>ولادة بنت المستكفي</option>
+<option>يزيد بن الطثرية</option>
+<option>يزيد بن معاوية</option>
+<option>يوسف النبهاني</option>
+<option>يوسف بن رويسم</option>
+
+                                    </datalist>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rhyme">Rhyme:</label>
+                                    <input type="text" id="rhyme" name="rhyme" required class="form-control"><br>
+                                </div>
+                                <button type="submit" class="btn btn-primary"><i></i>Generate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+    var poetNameInput = document.getElementById("poet_name");
+    var poetNameOptions = Array.from(document.getElementById("poet_name_options").options);
+
+    poetNameInput.addEventListener("input", function() {
+        var userInput = poetNameInput.value;
+        var filteredOptions = poetNameOptions.filter(function(option) {
+            return compareStrings(userInput, option.value);
+        });
+
+        var datalist = document.getElementById("poet_name_options");
+        datalist.innerHTML = "";
+
+        filteredOptions.forEach(function(option) {
+            var newOption = document.createElement("option");
+            newOption.value = option.value;
+            datalist.appendChild(newOption);
+        });
+    });
+
+    // Function to compare two strings with flexibility for variations
+    function compareStrings(string1, string2) {
+        var normalizedString1 = normalizeString(string1);
+        var normalizedString2 = normalizeString(string2);
+        return normalizedString2.includes(normalizedString1);
+    }
+
+    // Function to normalize a string by removing certain characters
+    function normalizeString(string) {
+        return string.replace(/ء/g, ''); // Remove 'ء' character
+    }
+</script>
+
+
+
+
+
+  <!-- link js  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <script src="static/js/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset: 100,
+        callback: function (box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function () {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+  <script src="../static/js/jquery.slim.min.js"></script>
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/bootstrap .min.js"></script>
+</body>
+
+</html>

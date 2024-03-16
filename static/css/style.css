@@ -1,0 +1,1064 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+a {
+text-decoration : none;
+}
+/* strat navbar  */
+.Navbar {
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    padding: 5px;
+    box-shadow: 0 20px 50px 0 rgb(255, 255, 255, 0.2);
+    width: 100%;
+}
+.logoo{
+        width: 68px;
+    margin-right: -24px;
+}
+
+.Navbar a {
+    color: white !important;
+    font-family: Albert Sans ExtraBold;
+    font-size: 20px;
+}
+
+.Navbar button {
+    background-color: white;
+    border-color: white;
+    color: #2ed06e;
+    border-radius: 50px;
+    width: 100px;
+    margin-right: 25px;
+    font-family: Albert Sans ExtraBold;
+
+
+}
+
+.Navbar li {
+    padding: 2px;
+    font-family: Albert Sans ExtraBold;
+
+}
+
+/* end navbar  */
+
+/* start header  */
+.header {
+    background: linear-gradient(to right, #b6dcff, #f5f8fc);
+    padding-top: 90px;
+    height: 700px;
+}
+
+.text_header {
+
+    padding-left: 125px;
+    padding-top: 90px;
+
+}
+
+.header .fadeInRight {
+    width: 100%;
+    height: 100%;
+}
+.header-logo {
+width : 100px
+}
+
+
+.text_header h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 58px;
+}
+
+.text_header p {
+    color: black;
+    font-family: emoji;
+    font-size : 18px
+}
+
+.button_one {
+    width: 200px;
+    padding: 15px 28px;
+    border-radius: 13px;
+    background-color: black;
+}
+
+.button_two {
+    background-color: transparent !important;
+    border-color: black;
+    padding: 11px 29px;
+    border-radius: 9px;
+}
+.button-two a {
+    color:#000;
+    text-decoration:none;
+    background-color : transparent;
+}
+
+/* end header */
+
+
+/* start Trusted section */
+.logo {
+    background-color: #f5f8fc;
+    padding-top: 30px;
+    height: 200px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/* end Trusted section */
+
+.Benefits .card img {
+    height: 290px;
+}
+
+.Benefits .card .info h3 {
+padding:0;
+margin-top:5px;
+margin-bottom : 5px;
+text-align:center;
+}
+.Benefits .card .info p {
+    text-align : center;
+    font-size : 18px
+}
+
+
+
+/* start Features  */
+.Features_1 {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.text_Features {
+
+    padding-left: 100px;
+    padding-top: 60px;
+
+}
+
+.Features_1 img {
+    width: 589px;
+    height: 325px;
+}
+
+.Features_1 h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 58px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.text_Features h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.text_Features p {
+    color: black;
+    font-family: emoji;
+}
+
+.button_one {
+    width: 200px;
+    padding: 15px 28px;
+    border-radius: 13px;
+    background-color: black;
+}
+.fea {
+border-top : 2px solid #ddd
+}
+
+.Features_2 {
+    padding-top: 90px;
+    padding-bottom: 50px;
+
+}
+
+.text_Features_2 {
+
+    padding-left: 50px;
+    padding-top: 60px;
+
+}
+
+.Features_2 img {
+    width: 613px;
+    height: 325px;
+    padding-left: 69px;
+    padding-top: 46px;
+}
+
+.text_Features_2 {
+
+    padding-left: 20px;
+    padding-top: 60px;
+
+}
+
+.text_Features_2 h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.text_Features_2 p {
+    color: black;
+    font-family: emoji;
+}
+
+
+/* end Features */
+
+
+
+/* start Benefits */
+.Benefits {
+    background-color: #f5f8fc;
+    background: linear-gradient(to right, #b6dcff, #f5f8fc);
+    padding-top: 100px;
+    height: 1000px;
+}
+
+.Benefits h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+.Benefits h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* end Benefits */
+
+
+/* start Benefits */
+.removal {
+    padding-top: 100px;
+    height: 1000px;
+}
+
+.removal h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+}
+
+.removal img {
+    width: 350px;
+}
+
+.removal h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* end Benefits */
+
+
+
+
+/* sing Benefits */
+
+.sing {
+    height: 350px;
+    background-color: black;
+}
+
+
+.sing h1 {
+    color: white;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sing button {
+    width: 200px;
+    padding: 15px 28px;
+    border-radius: 10px;
+    background-color: #12e8ff;
+    color: black;
+}
+
+.sing hr {
+    display: block;
+    background-color: white !important;
+}
+
+/* end sing */
+
+
+/* start footer  */
+.footer {
+    background-color: black;
+    color: white;
+    height: 350px;
+}
+
+.footer a {
+    color: #12e8ff;
+}
+
+/* end footer  */
+
+
+/*////////////////// DENOISE PAGE ///////////// */
+
+
+/* start header section  */
+.banner {
+    background-color: #ffeefa;
+    background: linear-gradient(to right, #fff7db, #7f4edc);
+
+}
+
+.banner img {
+    height: 500px;
+}
+
+.denoise_button {
+    width: 235px;
+    padding: 15px 28px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #34205f, #d62391);
+    border-color: snow;
+}
+
+/* end header section  */
+
+
+
+/* START STEPS SECTION  */
+.Steps h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    padding-top: 50px;
+}
+
+.Steps h4 {
+    font-family: Albert Sans ExtraBold;
+    color: #7f4edc;
+}
+
+.Steps hr {
+    display: block;
+    background-color: black !important;
+}
+
+.Steps img {
+    border-radius: 20px;
+}
+
+/* END STEPS SECTION  */
+
+
+
+/* START Quality SECTION  */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.Quality h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+}
+
+.Quality_card {
+    background-color: #323033;
+}
+
+.Quality_card h1 {
+    color: white;
+}
+
+.Quality_card h1:hover {
+    color: black;
+}
+
+.Quality_card span {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Quality_card label {
+    border-radius: 50px !important;
+    background-color: #333134;
+    color: white;
+}
+
+
+.Quality_card_2 {
+    background: linear-gradient(to right, #34205f, #d62391);
+
+}
+
+.Quality_card_2 h1 {
+    color: white;
+}
+
+.Quality_card_2 h1:hover {
+    color: black;
+}
+
+.Quality_card_2 span {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Quality_card_2 label {
+    border-radius: 50px !important;
+    background-color: #7f4edc;
+    color: white;
+}
+
+/* END Quality SECTION  */
+
+
+
+
+/* START Cleaner SECTION  */
+.Cleaner h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    margin-top: 150px;
+}
+
+/* END Cleaner SECTION  */
+
+
+/* start app section  */
+.app {
+    text-align: center;
+    background: linear-gradient(to right, #34205f, #d62391);
+    height: 300px;
+
+}
+
+.app h2 {
+    margin-top: 110px;
+    color: white;
+}
+
+/* end app section  */
+
+
+
+
+/*////////////////////// generator PAGE ///////////// */
+
+/* START generator SECTION  */
+.generator {
+    background-color: whitesmoke;
+    padding-top: 100px;
+    text-align: center;
+    height: 700px;
+}
+
+.generator h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    padding-bottom: 50px;
+}
+
+.generator img {
+    height: 300px;
+}
+
+.generator a {
+    font-family: Albert Sans ExtraBold;
+    color: black;
+}
+
+.generator a:hover {
+    color: #d62391;
+    text-decoration: none;
+}
+
+.card {
+    box-shadow: 5px 3px 6px 3px rgb(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.move {
+    margin-left: 150px;
+}
+
+/* END generator SECTION  */
+
+
+/* //////////////// INPUT PAGE ///////////// */
+
+.info h3 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    padding-top: 98px;
+}
+
+.info input {
+    border-radius: 50px;
+    box-shadow: 5px 3px 6px 3px rgb(0, 0, 0, 0.2);
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+.info button {
+    width: 235px;
+    padding: 15px 28px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #34205f, #d62391);
+    border-color: snow;
+}
+
+
+
+
+
+
+
+
+/*/////////// result page //////////// */
+
+
+.result{
+    background-color: #ccc;
+    height: 450px;
+}
+
+
+.result h1{
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 45px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.per{
+    font-size: 18px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+.result a{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 18px;
+    width: 235px;
+    padding: 14px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #34205f, #d62391);
+    color: white;
+}
+.result a:hover{
+    text-decoration: none;
+}
+
+.Speaker {
+    /* background: linear-gradient(to right, #b6dcff,  #d62391); */
+    background-color: #ccc;
+
+    padding-top: 90px;
+    height: 700px;
+}
+.text_Speaker{
+    padding-top: 120px;
+}
+
+.text_Speaker h1 {
+    color: black;
+    font-family: Albert Sans ExtraBold;
+    font-weight: 800;
+    font-size: 58px;
+}
+
+.text_Speaker strong {
+    color: white;
+    font-family: Albert Sans ExtraBold;
+    background: linear-gradient(to right, #462d7c, #d62391);
+    display: block;
+    width: 151px;
+    height: 49px;
+    text-align: center;
+    padding-top: 11px;
+    border-radius: 13%;
+}
+
+.box_error{
+    background-color: red;
+    color: white;
+    font-family: Albert Sans ExtraBold;
+
+}
+
+.Speaker_label{
+    border-radius: 20px;
+    width: 482px;
+    background-color: #333134;
+    color: white;
+}
+.Speaker_input{
+    color: white;
+    font-family: Albert Sans ExtraBold;
+    background: linear-gradient(to right, #462d7c, #d62391);
+    display: block;
+    width: 151px;
+    height: 49px;
+    text-align: center;
+    border-radius: 7%;
+}
+
+.circle_img{
+    border-radius: 50%;
+    width: 489px;
+    height: 452px;
+    margin-left: 157px;
+    margin-top: 50px;
+}
+
+.speaker-identification, .classifications {
+    background-color: #EBAFD3;
+    height: 92vh;
+    overflow: hidden;
+}
+
+.speaker-identification .speaker, .classifications .classification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.speaker-identification .info h1 {
+    font-family: "Salsa", cursive;
+    font-size: 50px;
+    color: #920F95;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.speaker-identification .info p {
+    font-family: "Sanchez", serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.speaker-identification img {
+    width: 500px;
+    height: 389px;
+    border-radius: 124px;
+}
+
+.classifications {
+    background-color: rgba(170, 162, 170, 0.39);
+    height: 130vh;
+}
+.classification .info span {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.classification .info p {
+    font-family: "Sanchez", serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.classification h3 {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.classification .card {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+}
+
+.classification .card img {
+    width: 248px;
+    height: 229px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.classification .card h5 {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.classification .card-2 {
+    margin-top: 40px;
+}
+
+.classification .card-3 {
+    margin-top: 55px;
+}
+
+
+
+
+
+
+
+.verses h1 {
+    position: absolute;
+    left: 26%;
+    font-family: "Sanchez", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.category {
+    min-height: 100vh;
+    background-image: url('static/img/cateory.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.meter {
+    min-height: 100vh;
+    background-image: url('static/img/meter.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.sanchez-regular {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sanchez-regular-italic {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.salsa-regular {
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sanchez-regular {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sanchez-regular-italic {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.speaker-identification, .classifications {
+    background: linear-gradient(to right, #fff7db, #7f4edc);;
+    height: 92vh;
+    overflow: hidden;
+}
+
+.speaker-identification .speaker, .classifications .classification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    background
+}
+
+.speaker-identification .info h1 {
+    font-family: "Salsa", cursive;
+    font-size: 50px;
+    color: #920F95;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.speaker-identification .info p {
+    font-family: "Sanchez", serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.speaker-identification img {
+    width: 500px;
+    height: 389px;
+    border-radius: 124px;
+}
+.Speaker_input {
+    background: #7f4edc;
+    color:#fff;
+    font-size:20px
+}
+
+.btnb{
+color: #fff;
+    border: 1px solid #eee;
+    margin: 10px;
+    background-color : transparent;
+    padding : 4px 8px ;
+}
+.classifications {
+    background-color: rgba(170, 162, 170, 0.39);
+    height: 110vh;
+}
+.classification .info span {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.classification .info p {
+    font-family: "Sanchez", serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.classification h3 {
+    font-family: "Sanchez", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.classification .card {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+}
+
+.classification .card img {
+    width: 248px;
+    height: 229px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.classification .card h5 {
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 5px;
+    color : #fff;
+}
+
+.classification .card-2 {
+    margin-top: 40px;
+}
+
+.classification .card-3 {
+    margin-top: 55px;
+}
+
+.author h1 , .verse h1 , .category h1 {
+    color:#fff;
+    font-size:50px;
+    font-weight:bold;
+       font-family: "Sanchez", serif;
+     font-style: italic;
+}
+.content p {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    padding:4px 8px ;
+    font-family: "Sanchez", serif;
+     font-style: italic;
+}
+.content label , .meter label {
+    color:#fff;
+    font-size:18px;
+    font-weight: 500;
+}
+.content input {
+   background-color: rgb(43 7 10 / 82%);
+   border:none;
+   outline:none;
+   text-align:left;
+}
+.content button {
+         background-color: #f5f5dc;
+    color: #000;
+    border: none;
+    font-size: 20px;
+}
+
+.verse p {
+ color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    padding:4px 8px ;
+    font-family: "Sanchez", serif;
+     font-style: italic;
+}
+.verse input , .meter input {
+ background-color: rgb(43 7 10 / 82%);
+   border:none;
+   outline:none;
+}
+.verse input::placeholder {
+    color:#fff;
+}
+.verse .btn , .meter button{
+background-color: #f5f5dc;
+color:#000;
+}
+.poemm {
+
+background-color: rgb(43 7 10 / 0.4);
+color:#fff;
+margin:auto;
+margin-top:25px;
+border:none;
+ border-radius: 25px;
+ padding:7px;
+ font-size:19px;
+ font-family: "Sanchez", serif;
+     font-style: italic;
+    font-weight:800;
+}
+.category p {
+ color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    padding:4px 8px ;
+    font-family: "Sanchez", serif;
+     font-style: italic;
+}
+.category  span {
+color:rgb(43 7 10 / 82%);
+ font-family: "Sanchez", serif;
+     font-style: italic;
+     font-weight: bold;
+     font-size:26px;
+}
+
+.meter h1 {
+        color:#000;
+    font-size:50px;
+    font-weight:bold;
+       font-family: "Sanchez", serif;
+     font-style: italic;
+}
+.meter p {
+color: #000;
+    font-size: 26px;
+    font-weight: bold;
+    padding:4px 8px ;
+    font-family: "Sanchez", serif;
+     font-style: italic;
+}
+style attribute {
+    text-align: left;
+}
+.content button:hover , .meter button:hover {
+background-color: #f5f5dc;
+color:#000;
+}
+.poem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 52px;
+}
